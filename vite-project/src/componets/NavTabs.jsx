@@ -1,10 +1,11 @@
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-      <nav style={{backgroundColor: "#1995AD", padding: "25px", display: "flex", justifyContent: "space-between "}}>
-        <h2>Benjamin Brechter</h2>
+    <div>
+      <nav style={{backgroundColor: "#1b1b1b", padding: "25px", display: "flex", justifyContent: "space-between "}}>
+        <h2 style={{color: "#E2522F"}}>Benjamin Brechter</h2>
     <ul class="nav-ul" style = {{display: "flex" , margin: 0, alignItems: "center"}}>
       <li className="nav-item">
-        <a
+        <a class = "nav-link"
           href="#home"
           onClick={() => handlePageChange('Home')}
           // This is a conditional (ternary) operator that checks to see if the current page is "Home"
@@ -15,7 +16,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
       <li className="nav-item">
-        <a
+        <a class = "nav-link"
           href="#portfolio"
           onClick={() => handlePageChange('Portfolio')}
           // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
@@ -25,7 +26,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
       <li className="nav-item">
-        <a
+        <a class = "nav-link"
           href="#resume"
           onClick={() => handlePageChange('Resume')}
           // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
@@ -35,7 +36,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
       <li className="nav-item">
-        <a
+        <a class = "nav-link"
           href="#contact"
           onClick={() => handlePageChange('Contact')}
           // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
@@ -46,6 +47,9 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
     </ul>
     </nav>
+    <div class = "line"></div>
+    </div>
+    
   );
 }
 

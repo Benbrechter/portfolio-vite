@@ -1,9 +1,9 @@
 export default function Contact() {
     return (
       <div style={{marginTop: 100}}>
-        <h1 style= {{marginLeft: 150}}>Contact</h1>
+        <h1 style= {{marginLeft: 150, color: "white", fontFamily: "sans-serif"}}>Contact</h1>
         <div class = "form">
-        <form >
+        <form>
           <div>
           <h3 class= "contact-header"> Enter your name:</h3>
           <input style={{width: 300}} type="text" />
@@ -20,6 +20,7 @@ export default function Contact() {
         </form>
         </div>
       </div>
+      
     );
   }
   

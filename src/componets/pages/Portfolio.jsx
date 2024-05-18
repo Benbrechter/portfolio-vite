@@ -2,7 +2,7 @@ import farmer from "../images/farmer.png"
 import readme from "../images/readme_pic.jpg"
 import email from "../images/email.png"
 import github from "../images/github_icon.png"
-import linkedIn from "../images/linkedin.png"
+import linkedIn from "../images/linkedIn.png"
 export default function Portfolio() {
 return (
     <section>

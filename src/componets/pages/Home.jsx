@@ -11,7 +11,7 @@ import vscode from '../images/vscode.png'
 import windows from '../images/windows-icon.png'
 import email from "../images/email.png"
 import github from "../images/github_icon.png"
-import linkedIn from "../images/linkedin.png"
+import linkedIn from "../images/linkedIn.png"
 
 export default function Home() {
     return (

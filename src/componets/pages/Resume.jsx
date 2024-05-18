@@ -1,7 +1,7 @@
 import resumePdf from "../images/resume.jpg"
 import email from "../images/email.png"
 import github from "../images/github_icon.png"
-import linkedIn from "../images/linkedin.png"
+import linkedIn from "../images/linkedIn.png"
 export default function Resume() {
     return (
         <div>

@@ -4,6 +4,7 @@
   ## Description
   This is my webpage built with react to display the projects I have been working on.
 
+  link to portfolio - https://benjamin-brechter-portfolio.netlify.app/#home 
   ## Table of Contents
   - [Installation](#installation)
   - [Usage Information](#usage-information)

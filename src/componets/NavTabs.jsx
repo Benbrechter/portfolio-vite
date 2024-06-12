@@ -1,11 +1,11 @@
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <div>
-      <nav style={{backgroundColor: "#1b1b1b", padding: "25px", display: "flex", justifyContent: "space-between "}}>
-        <h2 style={{color: "#E2522F"}}>Benjamin Brechter</h2>
-    <ul class="nav-ul" style = {{display: "flex" , margin: 0, alignItems: "center"}}>
+      <nav style={{backgroundColor: "white", padding: "25px", display: "flex", justifyContent: "space-between "}}>
+        <h2 style={{color: "Black"}}>Benjamin Brechter</h2>
+    <ul className="nav-ul" style = {{display: "flex" , margin: 0, alignItems: "center"}}>
       <li className="nav-item">
-        <a class = "nav-link"
+        <a 
           href="#home"
           onClick={() => handlePageChange('Home')}
           // This is a conditional (ternary) operator that checks to see if the current page is "Home"
@@ -16,7 +16,17 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
       <li className="nav-item">
-        <a class = "nav-link"
+        <a 
+          href="#about"
+          onClick={() => handlePageChange('About')}
+          // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+        >
+          About
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
           href="#portfolio"
           onClick={() => handlePageChange('Portfolio')}
           // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
@@ -25,29 +35,9 @@ function NavTabs({ currentPage, handlePageChange }) {
           Portfolio
         </a>
       </li>
-      <li className="nav-item">
-        <a class = "nav-link"
-          href="#resume"
-          onClick={() => handlePageChange('Resume')}
-          // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
-        >
-          Resume
-        </a>
-      </li>
-      <li className="nav-item">
-        <a class = "nav-link"
-          href="#contact"
-          onClick={() => handlePageChange('Contact')}
-          // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-        >
-          Contact
-        </a>
-      </li>
     </ul>
     </nav>
-    <div class = "line"></div>
+    <div className = "line"></div>
     </div>
     
   );

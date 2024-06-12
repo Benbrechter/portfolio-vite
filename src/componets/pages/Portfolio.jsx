@@ -1,8 +1,5 @@
 import farmer from "../images/farmer.png"
 import readme from "../images/readme_pic.jpg"
-import email from "../images/email.png"
-import github from "../images/github_icon.png"
-import linkedIn from "../images/linkedIn.png"
 export default function Portfolio() {
 return (
     <section>
@@ -25,17 +22,6 @@ return (
             <h1 style={{color: "white"}}>ReadMe Generator</h1>
             <p class = "text">Hand writing a readme can be tedious and dreadful. So I built a readme generator that will take care of the structoring and base set up for you. Click on the image to go to my git repo!</p>
         </div>
-        </div>
-        <div class = "connect-container">
-            <a href="">
-        <img src={email} alt=""  class= "connect"/>
-        </a>
-        <a href="https://github.com/Benbrechter">
-        <img src={github} alt="" class= "connect"/>
-        </a>
-        <a href="https://www.linkedin.com/in/ben-brechter-630384203/">
-        <img src={linkedIn} alt="" class= "connect"/>
-        </a>
         </div>
     </section>
 )

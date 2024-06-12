@@ -78,6 +78,7 @@ color: var(--white)
   font-family: var(--text);
   color: var(--white);
   margin:0;
+  margin-top: 40px;
 }
 .about{
   display: flex;
@@ -94,10 +95,6 @@ color: var(--white)
 }
 
 .about-activities{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-family: var(--text);
   margin-bottom: 100px;
   color: var(--white)
@@ -173,8 +170,29 @@ color: var(--white)
 .contact-socials{
   margin-top: 150px;
 }
-
-
+.about-me{
+  display: flex;
+  margin-top: 50px;
+}
+.about-me-pt2{
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+}
+.about-me-header{
+  font-size: 50px;
+  margin-bottom: 60px;
+  color:#1e90ff
+}
+.about-me-text{
+  font-size: 20px;
+}
+.blue{
+  color: #1e90ff
+}
+.about-img{
+  margin-right: 50px;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

@@ -4,9 +4,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --orange: #E2522F;
-  --grey: #1b1b1b;
-  --white: white;
+  --orange: black;
+  --grey: white;
+  --white: #1b1b1b;
   --text: sans-serif;
   
 }
@@ -31,7 +31,6 @@ body {
   background-color: var(--orange);
 }
 .form {
-  margin-left: 100px;
   padding-bottom:200px;
   display: flex;
   width: 400px;
@@ -45,7 +44,12 @@ body {
 }
 .contact-btn{
   margin-top: 25px;
-  margin-left: 42%;
+  height: 40px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: #1e90ff ;
+  color: white;
+  font-size: 18px;
 }
 
 .portfolio-header{
@@ -72,25 +76,21 @@ color: var(--white)
   flex-direction: column;
   align-items: center;
   font-family: var(--text);
-  margin-top: 100px;
-  color: var(--white)
+  color: var(--white);
+  margin:0;
 }
 .about{
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--text);
-  margin-bottom: 100px;
-  color: var(--white)
+  color: var(--white);
+  flex-direction: row-reverse;
 }
 .about-text{
   width: 500px;
   font-size: 20px;
-  color: var(--white)
-}
-.text{
-  color: var(--white);
-  font-family: var(--text);
+  color: black
 }
 
 .about-activities{
@@ -114,7 +114,8 @@ color: var(--white)
   font-size: 20px;
 }
 .img{
-  height: 400px
+  height: 400px;
+  margin-left: 300px
 }
 .about-img{
   height: 80px;
@@ -138,6 +139,39 @@ color: var(--white)
 .connect{
   height: 50px;
   margin-left: 50px
+}
+.Home-container{
+  background-image: url(./componets/images/paper-clouds-sky-background-vector.jpg) ;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  justify-content: center
+}
+.Home-header{
+  font-size: 50px;
+}
+.Home-header-pt2{
+  font-size: 50px;
+  color: #1e90ff
+}
+.text{
+  font-size: 20px;
+  
+}
+
+.contact-container{
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 30px;
+}
+.contact-control{
+  display: flex;
+  justify-content: space-around;
+}
+.contact-socials{
+  margin-top: 150px;
 }
 
 

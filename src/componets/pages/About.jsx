@@ -9,6 +9,7 @@ import sql from '../images/sql-icon.png'
 import vscode from '../images/vscode.png'
 import windows from '../images/windows-icon.png'
 import avatar from '../images/carton-coder.jpg'
+import hand from "../images/hand.png"
 
 export default function About(){
     return(
@@ -17,23 +18,25 @@ export default function About(){
             <div className = "about-me">
                 <div className= "about-me-pt2">
             <h2 className='about-me-header'>Get to Know Who I Am</h2>
-            <p className='about-me-text'>Hi everyone, I am <span className= "blue">Benjamin Brechter</span> and currently live in <span className= "blue">Houston, Texas</span>. <br />
-            My fasination with coding started when I made a gaming systems that can <br /> play all SNES and NES games with a Raspbery Pi.
-            I am passanite about backend <br /> development and I am proficient in MongoDb and MYSQL. I have a Full-Stack web development certification I recived 
+            <p className='about-me-text'>Dear future employers, I am <span className= "blue">Benjamin Brechter</span>, I am currently based out of <span className= "blue">Houston, Texas</span>.
+            My fascination with coding started when I made a gaming system that can <br /> play all Super Nintendo Entertaining System(SNES) and Nintendo Entertaining System(NES) games utilizing a Raspbery Pi.
+            I am passionate about backend <br /> development and I am proficient in MongoDb and MYSQL. I have a Full-Stack web development certification I received 
             from the University of Texas at Austin.</p>
+    
+            <h1>Outside of my computer, Some activities <span className= "blue">I enjoy inculde</span>!</h1>
+
+            <ul class = "about-list">
+                <li style={{marginBottom: "10px"}}> <img src= {hand} alt="" className='pointer'/> Skateboarding</li>
+                <li style={{marginBottom: "10px"}}> <img src={hand} alt="" className='pointer'/> Reading any kind of book</li>
+                <li style={{marginBottom: "10px"}}> <img src={hand} alt="" className='pointer'/> Hang out with my cat <span style={{color: "red"}}>Trey</span> </li>
+                <li style={{marginBottom: "10px"}}> <img src={hand} alt="" className='pointer'/> Play Magic the Gathering</li>
+            </ul>
+            <p>"Fail fast, Learn Faster" - Randy Bean</p>
             </div>
             <img className= "img" style={{marginRight: "200px"}} src={avatar} alt="Picture of me" />
             </div>
-            <h2>Outside of my computer, Some activities I love to!</h2>
-
-            <ul class = "about-list">
-                <li style={{marginBottom: "10px"}}>Skateboarding</li>
-                <li style={{marginBottom: "10px"}}>Read any kind of book</li>
-                <li style={{marginBottom: "10px"}}>Hang out with my cat Trey</li>
-                <li style={{marginBottom: "10px"}}>Play Games</li>
-            </ul>
             </div>
-            <h2 class = "header">Professional Skillset</h2>
+            <h2 class = "header">Professional <span className= "blue" style={{marginLeft: "8px"}}>Skillset</span></h2>
             <section className="about-skills">
                 <img className="about-img" src={javascript} />
                 <img className="about-img" src={css} />

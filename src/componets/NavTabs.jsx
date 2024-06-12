@@ -1,9 +1,9 @@
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <div>
-      <nav style={{backgroundColor: "white", padding: "25px", display: "flex", justifyContent: "space-between "}}>
-        <h2 style={{color: "Black"}}>Benjamin Brechter</h2>
-    <ul className="nav-ul" style = {{display: "flex" , margin: 0, alignItems: "center"}}>
+      <nav  className = "nav-bar" style={{backgroundColor: "#BDECFE", padding: "25px", display: "flex", justifyContent: "space-between "}}>
+        <h2 style={{color: "black"}}>Benjamin Brechter</h2>
+    <ul className="nav-ul" style = {{display: "flex" , margin: 0, alignItems: "center" }}>
       <li className="nav-item">
         <a 
           href="#home"
@@ -26,7 +26,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
       <li className="nav-item">
-        <a
+        <a 
           href="#portfolio"
           onClick={() => handlePageChange('Portfolio')}
           // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
@@ -37,7 +37,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
     </ul>
     </nav>
-    <div className = "line"></div>
+    {/* <div className = "line"></div> */}
     </div>
     
   );

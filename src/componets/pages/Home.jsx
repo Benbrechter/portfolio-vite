@@ -14,7 +14,7 @@ export default function Home({ handlePageChange }) {
             <span >
             <h1 className="Home-header">Hi, I am Benjamin</h1>
             <h1 className= "Home-header-pt2">Full Stack Developer</h1>
-            <p className='text'>I am a Back-End / Full-Stack Developer.<br></br> I am looking to start my journey into the Tech feild.</p>
+            <p className='text'>I am a Back-End / Full-Stack Developer.<br></br> I am looking to continue my journey into Web Development.</p>
             <button onClick={handleButtonClick} className = "contact-btn">Resume</button>
             </span>
             </div>

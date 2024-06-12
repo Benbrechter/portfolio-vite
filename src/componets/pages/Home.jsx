@@ -1,4 +1,4 @@
-import avatar from '../images/carton-coder.jpg'
+import avatar from '../images/avatar/home-page.png'
 import Contact from "../Contact"
 
 

@@ -5,7 +5,7 @@ import linkedIn from "./images/linkedIn.png"
 export default function Connections(){
     return(
         <div>
-            <h4 className = "header">Feel free to connect</h4>
+            <h4 className = "header" style = {{color: "#1e90ff"}}>Feel free to connect</h4>
              <div className = "connect-container">
             <a href="">
         <img src={email} alt=""  className= "connect"/>

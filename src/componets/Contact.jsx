@@ -1,3 +1,6 @@
+import instagram from "./images/instagram.png"
+import twitter from "./images/twitter.png"
+
 export default function Contact() {
     return (
       <div className="contact-control">
@@ -24,10 +27,14 @@ export default function Contact() {
       </div>
       <div className= "contact-socials">
         <h2 className= "contact-header">Email</h2>
-        <a href="" >benbrechter3@gmail.com</a>
+        <p className="text">benbrechter3@gmail.com</p>
         <h2 className= "contact-header" style={{marginTop: "60px"}} >Socials</h2>
-        <a href="">filler Text</a>
-        <a href="">filler text</a>
+        <a href="https://www.instagram.com/benbeejammin/">
+          <img src={instagram} alt="" style={{height: "40px", marginRight: "30px"}}/>
+        </a>
+        <a href="https://x.com/bbenjamm">
+          <img src={twitter} alt=""  style={{height: "40px"}}/>
+        </a>
       </div>
       </div>
       

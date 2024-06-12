@@ -8,7 +8,7 @@ import slack from '../images/slack.png'
 import sql from '../images/sql-icon.png'
 import vscode from '../images/vscode.png'
 import windows from '../images/windows-icon.png'
-import avatar from '../images/carton-coder.jpg'
+import avatar from '../images/avatar/one-man.png'
 import hand from "../images/hand.png"
 
 export default function About(){

@@ -129,10 +129,15 @@ margin-top: 150px;
   height: 80px;
   margin: 15px
 }
+.resume-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .resume{
- margin-left: 30%;
  border: solid black 1px;
-
+ height: 1000px;
+ width: 800px;
 }
 .portfolio-Img{
   width: 400px;
@@ -175,6 +180,7 @@ margin-top: 150px;
   from {
     width: 0
   }
+  to { width: 100%; }
 }
 .text{
   font-size: 20px;

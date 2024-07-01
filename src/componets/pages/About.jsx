@@ -33,21 +33,27 @@ export default function About(){
             </ul>
             <p>"Fail fast, Learn Faster" - Randy Bean</p>
             </div>
-            <img className= "img" style={{marginRight: "200px"}} src={avatar} alt="Picture of me" />
+            <img className= "img2" src={avatar} alt="Picture of me" />
             </div>
             </div>
             <h2 class = "header">Professional <span className= "blue" style={{marginLeft: "8px"}}>Skillset</span></h2>
             <section className="about-skills">
+                <div>
                 <img className="about-img" src={javascript} />
                 <img className="about-img" src={css} />
                 <img className="about-img" src={html} />
+                </div>
+                <div>
                 <img className="about-img" src={mongo} />
                 <img className="about-img" src={node} />
                 <img className="about-img" src={react} />
+                </div>
+                <div>
                 <img className="about-img" src={sql} />
+                </div>
                 </section>
                 <h2 className = "header">Tools I use</h2>
-                <section className="about-skills">
+                <section className="about-skills2">
                 <img className="about-img" src={vscode} />
                 <img className="about-img" src={windows} />
                 <img className="about-img" src={slack} />

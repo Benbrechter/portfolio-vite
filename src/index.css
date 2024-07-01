@@ -20,6 +20,10 @@ body {
   position: fixed;
   top: 0px;
   width: 97.3%;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #BDECFE;
 }
 .nav-link{
   color: var(--orange );
@@ -34,9 +38,26 @@ body {
 }
 .nav-item {
   margin-left: 25px;
+  margin-right: 5px;
   list-style-type: none;
   font-size: 25px;
   color:#1e90ff
+}
+.sidebar-item {
+  margin-left: 25px;
+  margin-right: 5px;
+  list-style-type: none;
+  font-size: 25px;
+  color:#1e90ff
+}
+.sidebar-item :hover{
+  background-color: #1e90ff;
+  height: max-content;
+  border-radius: 10px;
+}
+.dropdown-menu-icon{
+  display: none;
+  margin-right: 25px
 }
 .form {
   padding-bottom:200px;
@@ -251,16 +272,38 @@ margin-top: 150px;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
 }
+.sidebar{
+  position: fixed;
+  top:0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.361);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-self: flex-start;
+}
 @media all and (max-width: 500px ) {
   .Home-container{
     display: flex;
     flex-direction: column;
-    height: 875px;
+    height: 950px;
   }
+  .Home-header{
+   font-size: 40px;
+  }
+  .Home-header-pt2{
+    font-size: 40px;
+    max-width: max-content;
+   }
   .about{
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 100px;
+    margin-top: 250px;
 
   }
   .contact-control{
@@ -277,6 +320,7 @@ margin-top: 150px;
   }
   .img1{
     margin-left: 55px;
+    height: 300px;
   }
   .img2{
     margin: 0;
@@ -302,8 +346,29 @@ margin-top: 150px;
   flex-direction: column;
   align-items: center;
   }
+  .about-me-header{
+    font-size: 40px;
+  }
+  .about-me-text{
+    font-size: 20px;
+    width: 80%;
+  }
   .row{
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  .portfolio-paragraph{
+    font-size: 20px;
+  }
+  .resume{
+    width: 400px;
+    height: 600px;
+  }
+  .nav-item{
+    display: none;
+  }
+  .dropdown-menu-icon{
+    display: flex;
   }
 }

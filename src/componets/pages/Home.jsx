@@ -11,7 +11,7 @@ export default function Home({ handlePageChange }) {
             <div className='Home-container'>
             <div className = "about">
             <img className= "img" style={{marginRight: "75px"}} src={avatar} alt="Picture of me" />
-            <span >
+            <span className='full-stack'>
             <h1 className="Home-header">Hi, I am Benjamin</h1>
             <h1 className= "Home-header-pt2">Full Stack Developer</h1>
             <p className='text'>I am a Back-End / Full-Stack Developer.<br></br> I am looking to continue my journey into Web Development.</p>

@@ -41,10 +41,12 @@ export default function About(){
                 <div>
                 <img className="about-img" src={javascript} />
                 <img className="about-img" src={css} />
-                <img className="about-img" src={html} />
                 </div>
                 <div>
+                <img className="about-img" src={html} />
                 <img className="about-img" src={mongo} />
+                </div>
+                <div>
                 <img className="about-img" src={node} />
                 <img className="about-img" src={react} />
                 </div>
